@@ -22,7 +22,7 @@ module.exports = (env) => {
                 { test: /\.css$/, use: [ 'to-string-loader', isDevBuild ? 'css-loader' : 'css-loader?minimize' ] },
                 { test: /\.(png|jpg|jpeg|gif)$/, use: 'url-loader?limit=25000' }, 
                 {
-                    test: /\.scss$/,
+                    test: /\.scss$/, 
                     exclude: [/\.global\.scss$/],
                     loaders: ['raw-loader', 'sass-loader']
                 },

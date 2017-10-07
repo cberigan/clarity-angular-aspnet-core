@@ -21,9 +21,6 @@ const treeShakableModules = [
     'clarity-angular'
 ];
 const nonTreeShakableModules = [
-    'bootstrap',
-    'es6-promise',
-    'es6-shim',
     'core-js/es6/symbol',
     'core-js/es6/object',
     'core-js/es6/function',
@@ -38,10 +35,12 @@ const nonTreeShakableModules = [
     'core-js/es6/map',
     'core-js/es6/set',
     'core-js/es7/map',
+    'classlist.js',
+    'core-js/es6/reflect',
     'core-js/es7/reflect',
+    'event-source-polyfill',
     'mutationobserver-shim/dist/mutationobserver.min',
     '@webcomponents/custom-elements/custom-elements.min',
-    'event-source-polyfill',
     'jquery',
 ];
 const allModules = treeShakableModules.concat(nonTreeShakableModules);
